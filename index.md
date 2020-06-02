@@ -4,8 +4,6 @@ title: ~
 permalink: /
 image: /assets/images/artwork/cover.jpg
 og:
-  title: KOH GI
-  description: All artworks of Koh Gi
+  title: ~
   image: /assets/images/artwork/cover.jpg
-  card: summary_large_image
 ---
