@@ -1,5 +1,5 @@
 ---
 layout: cover
 permalink: /
-image: /assets/images/cover.jpg
+image: /assets/images/artwork/cover.jpg
 ---
