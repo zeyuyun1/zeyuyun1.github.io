@@ -1,34 +1,34 @@
 name: Build and deploy Jekyll site to GitHub Pages
 
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  github-pages:
-    runs-on: ubuntu-16.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@2.0.1
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
 # on:
 #   push:
 #     branches:
-#       - source  # default branch
+#       - master
 
 # jobs:
-#   deploy:
-#     runs-on: ubuntu-18.04
+#   github-pages:
+#     runs-on: ubuntu-16.04
 #     steps:
 #       - uses: actions/checkout@v2
+#       - uses: helaili/jekyll-action@2.0.1
+#         env:
+#           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+on:
+  push:
+    branches:
+      - source  # default branch
 
-#       - run: somebuild
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
 
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           github_token: ${{ secrets.JEKYLL_PAT }}
-#           publish_dir: ./public
-#           publish_branch: master  # deploying bran
+      - run: somebuild
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.JEKYLL_PAT }}
+          publish_dir: ./public
+          publish_branch: master  # deploying bran
