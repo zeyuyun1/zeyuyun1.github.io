@@ -14,7 +14,7 @@ jobs:
       - name: Build Jekyll site.
         uses: fabacab/jekyll-builder-for-github-pages-action@v1
         with:
-          github_token: ${{ secrets.JEKYLL_PAT }}
+          secret_gh_pages_api_token: ${{ secrets.JEKYLL_PAT }}
 
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
