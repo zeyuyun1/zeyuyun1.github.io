@@ -2,7 +2,7 @@
 on:
   push:
     branches:
-      - source  # default branch
+      - master  # default branch
 
 jobs:
   deploy:
@@ -12,7 +12,7 @@ jobs:
 
       # - run: somebuild
       - run: hugo --minify
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
