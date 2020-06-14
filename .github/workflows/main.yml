@@ -1,34 +1,29 @@
-# name: Jekyll Deploy
 on:
   push:
     branches:
-      - master  # default branch
+      - source  # default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      # - run: somebuild
-      # - run: hugo --minify
-      - name: Build Jekyll site.
-        uses: fabacab/jekyll-builder-for-github-pages-action@v1
-        with:
-          secret_gh_pages_api_token: ${{ secrets.JEKYLL_PAT }}
 
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.JEKYLL_PAT }}
-      #     publish_dir: ./public
-      #     publish_branch: master  # deploying branch
+      - run: somebuild
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master  # deploying branch
 
 # name: Jekyll Deploy
 
 # on:
 #   push:
 #     branches:
-#       - master
+#       - source
 
 # jobs: 
 #   build_and_deploy:
