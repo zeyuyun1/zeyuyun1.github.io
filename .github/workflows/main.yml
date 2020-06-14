@@ -17,9 +17,7 @@ jobs:
       - name: Publish Site
         uses: chabad360/hugo-gh-pages@master
         with:
-          github_token: ${{ secrets.JEKYLL_PAT}}
-          publish_dir: ./public
-          publish_branch: master
+          githubToken: ${{ secrets.JEKYLL_PAT}}
 
 
 # name: github pages
