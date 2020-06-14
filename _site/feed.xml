@@ -1,4 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-01T22:56:40-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Zeyu Yun</title><entry><title type="html">2020.05.23</title><link href="http://localhost:4000/birthday/2020/05/23/note009.html" rel="alternate" type="text/html" title="2020.05.23" /><published>2020-05-23T00:00:00-07:00</published><updated>2020-05-23T00:00:00-07:00</updated><id>http://localhost:4000/birthday/2020/05/23/note009</id><content type="html" xml:base="http://localhost:4000/birthday/2020/05/23/note009.html">&lt;p&gt;我的生日是昨天 现在美国的疫情很严重 因为疫情我从宿舍租的房子里搬到外面去住了 我合租的室友很希望我回去 但因为疫情我担心他们不够小心就以一直没回去 所以这天一整天我都在家里待着哪也没去 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-13T18:57:39-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Zeyu Yun</title><entry><title type="html">Note 005 Graph (5 mins read)</title><link href="http://localhost:4000/cs70/2020/06/13/note004.html" rel="alternate" type="text/html" title="Note 005 Graph (5 mins read)" /><published>2020-06-13T00:00:00-07:00</published><updated>2020-06-13T00:00:00-07:00</updated><id>http://localhost:4000/cs70/2020/06/13/note004</id><content type="html" xml:base="http://localhost:4000/cs70/2020/06/13/note004.html">&lt;h3 id=&quot;leap-of-the-faith&quot;&gt;Leap of the Faith:&lt;/h3&gt;
+
+&lt;p&gt;For this chapter I think you really need to read the notes, not all the them, but if a theorem appears in the lecture. You should go back to find the proof for that theorem in the note and see if you understand it. A lot of you might ask if you need to remember the proofs. I will say, if you want an A, then the answer is Yes. However, remember the proofs does not mean reciting the proofs words for words, but remembering the most important line of the proof. I call this the “Leap of the Faith”. Here’s some example:&lt;/p&gt;
+
+&lt;h1 id=&quot;theorem-51-eulers-theorem-1736-an-undirected-graph-g--ve-has-an-eulerian-tour-iff-g-is-even-degree-and-connected-except-possibly-for-isolated-vertices&quot;&gt;Theorem 5.1 (Euler’s Theorem (1736)): &lt;em&gt;An undirected graph G = (V,E) has an Eulerian tour iff G is even degree, and connected (except possibly for isolated vertices)&lt;/em&gt;&lt;/h1&gt;
+
+&lt;p&gt;$\Rightarrow$&lt;/p&gt;
+
+&lt;p&gt;For a tour, we can imagine we removed an edge once we walked on it. For each vertex, the tour must go in and out. Since no edge is repeated, we remove two degree from the vertex each time. Eventually, we removed even number of degree for each vertex.&lt;/p&gt;
+
+&lt;p&gt;$\Leftarrow$&lt;/p&gt;
+
+&lt;p&gt;Make a tour, still imagine we removed the edge that we walked on. Since every vertex has even degree, we must pass through every vertex and eventually comeback to the starting point. Repeat until we get an Eulerian tour.&lt;/p&gt;</content><author><name></name></author><summary type="html">Leap of the Faith:</summary></entry><entry><title type="html">Note 002 Proofs (10 mins read)</title><link href="http://localhost:4000/cs70/2020/06/13/note002.html" rel="alternate" type="text/html" title="Note 002 Proofs (10 mins read)" /><published>2020-06-13T00:00:00-07:00</published><updated>2020-06-13T00:00:00-07:00</updated><id>http://localhost:4000/cs70/2020/06/13/note002</id><content type="html" xml:base="http://localhost:4000/cs70/2020/06/13/note002.html">&lt;h3 id=&quot;how-to-prove-an-implication-is-correct&quot;&gt;How to prove an implication is correct?&lt;/h3&gt;
+
+&lt;p&gt;I got asked by this a lot: How do you prove “If P then Q”? You might encounter this question even bofore taking this class. And you probably know what to do, but don’t know why.&lt;/p&gt;
+
+&lt;p&gt;“I can first assume P is true, and prove Q is true as well”&lt;/p&gt;
+
+&lt;p&gt;YES! This is right procedure, your proof goes:&lt;/p&gt;
+
+&lt;p&gt;”
+Assume P is True,&lt;/p&gt;
+
+&lt;p&gt;Some proofs…&lt;/p&gt;
+
+&lt;p&gt;Conclude Q is true
+“&lt;/p&gt;
+
+&lt;p&gt;But do you know why I don’t you need to consider the case when P is False? After all, you just learnt “prove by cases”, there’s two cases for P, it can either be True or False. So why don’t we need to consider the case when P is False?&lt;/p&gt;
+
+&lt;p&gt;There’s two way to explain the answer:&lt;/p&gt;
+
+&lt;p&gt;First, the intuitive way:&lt;/p&gt;
+
+&lt;p&gt;Consider this implication “If there’s a wild fire, the school will shut down.” When will this statement will false? It’s when in reality, there’s a wild fire, but school does not shut down. What if there’s no wild fire in the first place, then the school might not shut down due to other reason like the coronavirus. No matter what, it cannot prove the statement “If there’s a wild fire, the school will shut down.” is True or False. In other words, it’s irrelevant to the statment.&lt;/p&gt;
+
+&lt;p&gt;Next, the mathematical way, make sure, make sure you understand this, in fact, if you do, then your understanding is already above the curve:&lt;/p&gt;
+
+&lt;p&gt;Consider the Truth table for “If P then Q” aka, $ P \implies Q$&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{C|C|C|}
+P &amp; Q &amp; P\implies Q \\
+\hline
+\color{red} T &amp; \color{red}T &amp; \color{red}T \\
+T &amp; F &amp; F\\
+\color{red}F &amp; \color{red}T &amp; \color{red}T\\
+\color{red}F &amp; \color{red}F &amp; \color{red}T
+\end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;How do we prove $p\implies q$ is true? We only need to consider the above three line that’s colored in red in the true table, which are all related to $p \implies q$ being True. If we assume P is False, that goes to the the last two line, no matter what Q is, P will be True. If we assume P is True, we need to prove Q is true in order for $P\implies Q$ to be True. That’s why we don’t bother to assume P is False. That’s why the general proving technique is:&lt;/p&gt;
+
+&lt;p&gt;”
+Assume P is True,&lt;/p&gt;
+
+&lt;p&gt;Some proofs…&lt;/p&gt;
+
+&lt;p&gt;Conclude Q is true
+“&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cs70/w2.gif&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a daily dose of kirara.&lt;/p&gt;</content><author><name></name></author><summary type="html">How to prove an implication is correct?</summary></entry><entry><title type="html">Note 001 Propositional Logic and Quantifiers (12 mins read)</title><link href="http://localhost:4000/cs70/2020/06/13/note001.html" rel="alternate" type="text/html" title="Note 001 Propositional Logic and Quantifiers (12 mins read)" /><published>2020-06-13T00:00:00-07:00</published><updated>2020-06-13T00:00:00-07:00</updated><id>http://localhost:4000/cs70/2020/06/13/note001</id><content type="html" xml:base="http://localhost:4000/cs70/2020/06/13/note001.html">&lt;h3 id=&quot;proposition-are-functions-that-takes-in-some-input-and-output-true-or-false&quot;&gt;Proposition are functions that takes in some input and output True or False:&lt;/h3&gt;
+
+&lt;p&gt;For example, we can define the proposition “x is greater than 5” as $P(x)$. If we replace x with 4, it will make the statement becomes “4 is greater than 5”, a wrong statement. If we replace x with 6, it will make the statement becomes “6 is greater than 5”, a true statement. Wow, it’s just like a function in python :&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+P(x)= \left\{
+\begin{array}{ll}
+      True &amp; x &gt; 5\\
+      False &amp; x \leq 5\\
+\end{array} 
+\right. %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Similarly, “x is less than 6” can be written as $Q(x)$ such that:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+Q(x)= \left\{
+\begin{array}{ll}
+      True &amp; x &lt; 6\\
+      False &amp; x \geq 6\\
+\end{array} 
+\right. %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Further compounding proposition with logic will also give functions, for example:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+Q(x) \wedge P(x) = \left\{
+\begin{array}{ll}
+      True &amp; 5&lt; x &lt; 6\\
+      False &amp; Otherwise\\
+\end{array} 
+\right. %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Here’s today’s exercise: Prove the above expression is correct. Hint: use Truth Table (because this is the only way you learnt so far to prove things)&lt;/p&gt;
+&lt;h3 id=&quot;what-exactly-is-universal-quantifier-forall-and-exists&quot;&gt;What exactly is Universal Quantifier $\forall$ and $\exists$:&lt;/h3&gt;
+
+&lt;p&gt;The $\forall$ is a sequence of “and” and $\exists$ is a sequence of “or”. Although this is in your note, I cannot stress it more. For example, we can denote the proposition “x is non-negative” as P(x). And what’s the statement “All natural number are non-negative” in propositional logic? It is&lt;/p&gt;
+
+&lt;p&gt;$(\forall n \in \mathbb{N}) P(n)$, which is equivalently as $P(0) \wedge P(1) \wedge P(2) \wedge P(3) …$&lt;/p&gt;
+
+&lt;p&gt;Similarly, the statement “for any real number x, there is natural number greater than x” can be written as $(\forall x \in  \mathbb{R} ) (\exists n \in \mathbb{N}) x &amp;lt; n$, which can be expanded as $(\forall x \in \mathbb{R}) (x&amp;lt;1) \vee (x&amp;lt;2) \vee (x&amp;lt;3) \vee (x&amp;lt;4) …$ 
+This is one of the most important theorem in anlysis, which is probably be the first thing you learn if you take Math 104. Notice I expaned $\exists n \in \mathbb{N} $ using the “or” operator “$\vee$”, but I cannot expand $(\forall x \in  \mathbb{R} )$, this is simply because I cannot iterate through all the real number. Formally, real numbers are “uncountable” and we will learn about this later.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cs70/w1.gif&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a daily dose of kirara.&lt;/p&gt;</content><author><name></name></author><summary type="html">Proposition are functions that takes in some input and output True or False:</summary></entry><entry><title type="html">General Tips</title><link href="http://localhost:4000/cs70/2020/06/13/note000.html" rel="alternate" type="text/html" title="General Tips" /><published>2020-06-13T00:00:00-07:00</published><updated>2020-06-13T00:00:00-07:00</updated><id>http://localhost:4000/cs70/2020/06/13/note000</id><content type="html" xml:base="http://localhost:4000/cs70/2020/06/13/note000.html">&lt;p&gt;For all the student who wants to get an A and A+ in this class, my advice is that simply watch lecture and doing practice exam is not enough. In order to get A and A+, you need to truly understand the material. You need to teach yourself and make a habit of reading notes. If you are interested in math/ML field, learn to read note/textbook will benefit you so much and even beyound the benefit of the material of this class. Another good way to study is to discuss among peers and explain the concept to your friend. Here’s some extra note I wrote for you to show that you truly understand the material. I love you all and wish you succeed!!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cs70/w0.gif&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is Kirara(雲母) from an old school Anime called InuYasha. It isn’t my favorite anime but she is probably animal.&lt;/p&gt;</content><author><name></name></author><summary type="html">For all the student who wants to get an A and A+ in this class, my advice is that simply watch lecture and doing practice exam is not enough. In order to get A and A+, you need to truly understand the material. You need to teach yourself and make a habit of reading notes. If you are interested in math/ML field, learn to read note/textbook will benefit you so much and even beyound the benefit of the material of this class. Another good way to study is to discuss among peers and explain the concept to your friend. Here’s some extra note I wrote for you to show that you truly understand the material. I love you all and wish you succeed!!</summary></entry><entry><title type="html">Note 003 Induction (5 mins read)</title><link href="http://localhost:4000/cs70/2020/06/13/note003.html" rel="alternate" type="text/html" title="Note 003 Induction (5 mins read)" /><published>2020-06-13T00:00:00-07:00</published><updated>2020-06-13T00:00:00-07:00</updated><id>http://localhost:4000/cs70/2020/06/13/note003</id><content type="html" xml:base="http://localhost:4000/cs70/2020/06/13/note003.html">&lt;h3 id=&quot;the-truth-behind-induction-hypothesis&quot;&gt;The Truth Behind Induction Hypothesis:&lt;/h3&gt;
+
+&lt;p&gt;This will be in the lecture, in the note, everywhwere. But make sure you can write induction principle on your own and understand how this transforms into “proof by induction”:&lt;/p&gt;
+
+&lt;p&gt;Formal definition:&lt;/p&gt;
+
+&lt;p&gt;Induction Principle: $P(1) \wedge (P(n) \implies P(n+1)) \implies \forall n \in \mathbb{N} P(n)$&lt;/p&gt;
+
+&lt;p&gt;Essentially, we can expand “$P(n) \implies P(n+1)$”, as the following chain of implication is true:&lt;/p&gt;
+
+&lt;p&gt;$ P(1) \implies P(2) \implies P(3) \implies P(4) …$&lt;/p&gt;
+
+&lt;p&gt;Since this chain of implication is true, if we know P(1) is True as well, then P(2) is True. Since P(2) True, then P(3) is True…&lt;/p&gt;
+
+&lt;p&gt;It is just like a sequence of domino tiles, we now know every P(n) is true!&lt;/p&gt;
+
+&lt;p&gt;This is formally why induction is true!&lt;/p&gt;
+
+&lt;p&gt;In fact, Induction Principle directly comes from “Well Ordering Principle” of integers, which is very nonempty subset of integers has a smallest or least element. In fact, you can prove “Well Ordering Principle” implies “Induction Principle”.Hint:[Use proof by contradiction and consider the set $n \in \mathbb{N} P(n)$is False]. I will leave this as a daily excercise to you!&lt;/p&gt;
+
+&lt;h3 id=&quot;induction-not-only-on-natural-number&quot;&gt;Induction not only on Natural number:&lt;/h3&gt;
+
+&lt;p&gt;Can you do induction some set other than natural number? Absolutely, for example, consider the set with $3\mathbb{Z}^{+}+1$ := {$k \in \mathbb{N} | 3k + 1$}&lt;/p&gt;
+
+&lt;p&gt;If we expand it out, it becomes {1,4,7,10,13,16 …}&lt;/p&gt;
+
+&lt;p&gt;In order to do induction on this set, we need change our base case and induction hypothesis a little bit. We need to have $P(1)$ as base case and $P(n) \implies P(n+3)$ as induction hypothesis instead. Can you see why? I think this is already a big hint for you homework problem so I’ll say no more. I’ll explain more on this in the modular arithmetic chapter!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cs70/w3.gif&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a daily dose of kirara.&lt;/p&gt;</content><author><name></name></author><summary type="html">The Truth Behind Induction Hypothesis:</summary></entry><entry><title type="html">2020.05.23</title><link href="http://localhost:4000/birthday/2020/05/23/note009.html" rel="alternate" type="text/html" title="2020.05.23" /><published>2020-05-23T00:00:00-07:00</published><updated>2020-05-23T00:00:00-07:00</updated><id>http://localhost:4000/birthday/2020/05/23/note009</id><content type="html" xml:base="http://localhost:4000/birthday/2020/05/23/note009.html">&lt;p&gt;我的生日是昨天 现在美国的疫情很严重 因为疫情我从宿舍租的房子里搬到外面去住了 我合租的室友很希望我回去 但因为疫情我担心他们不够小心就以一直没回去 所以这天一整天我都在家里待着哪也没去 
 因为是我的”生日“ 我不想工作 从早晨醒来 吃完饭再睡到中午 中午醒来一直没有字幕的看稲垣早希环游世界的那个日本电视节目 一直到半夜12点
 但和去年完全相反 我不想联系任何人 如果这样 任何人都不知道我今天过生日 这是这么多年来我第一次有这个想法 
 我想到这学期做Art期末Project里 引用之前trip review里的一句话 “我意识到我和自己是分开的 两码事 身体和我依赖的生存在这个世界上的一种形式 像是必要的 但也可能不是必须” 我想用这一天证明我能不依靠任何形式存在于这个世界上 这是这么多年来我第一次有这个想法 也可能是隔离到现在的成果吧 希望这个也能作为这个project的结语吧&lt;/p&gt;</content><author><name></name></author><summary type="html">我的生日是昨天 现在美国的疫情很严重 因为疫情我从宿舍租的房子里搬到外面去住了 我合租的室友很希望我回去 但因为疫情我担心他们不够小心就以一直没回去 所以这天一整天我都在家里待着哪也没去 因为是我的”生日“ 我不想工作 从早晨醒来 吃完饭再睡到中午 中午醒来一直没有字幕的看稲垣早希环游世界的那个日本电视节目 一直到半夜12点 但和去年完全相反 我不想联系任何人 如果这样 任何人都不知道我今天过生日 这是这么多年来我第一次有这个想法 我想到这学期做Art期末Project里 引用之前trip review里的一句话 “我意识到我和自己是分开的 两码事 身体和我依赖的生存在这个世界上的一种形式 像是必要的 但也可能不是必须” 我想用这一天证明我能不依靠任何形式存在于这个世界上 这是这么多年来我第一次有这个想法 也可能是隔离到现在的成果吧 希望这个也能作为这个project的结语吧</summary></entry><entry><title type="html">2020.04.18</title><link href="http://localhost:4000/dream_reality/2020/04/18/note001.html" rel="alternate" type="text/html" title="2020.04.18" /><published>2020-04-18T00:00:00-07:00</published><updated>2020-04-18T00:00:00-07:00</updated><id>http://localhost:4000/dream_reality/2020/04/18/note001</id><content type="html" xml:base="http://localhost:4000/dream_reality/2020/04/18/note001.html">&lt;p&gt;&lt;span style=&quot;color:red&quot;&gt; 
@@ -137,30 +283,4 @@ Movement
 &lt;br /&gt; &amp;gt;
 &lt;br /&gt; &amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/dream_reality/3.jpg&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">与此同时 我没有办法依赖于他们中任何一个 因为很讽刺的是 在◾◾◾的作用下 这一切感觉本身都是虚假的 当我尝试新的存在形式 得到的只有循环和失败 然后进入下一个循环 然后失败 而这一切虚假的原因是我并没有改变整个世界的构造 我改变的只是我自己 只要我的意志在三维空间 无论我的意识怎么努力 我也无法理解四维空间</summary></entry><entry><title type="html">2019.01.12</title><link href="http://localhost:4000/dream_reality/2019/01/12/note002.html" rel="alternate" type="text/html" title="2019.01.12" /><published>2019-01-12T00:00:00-08:00</published><updated>2019-01-12T00:00:00-08:00</updated><id>http://localhost:4000/dream_reality/2019/01/12/note002</id><content type="html" xml:base="http://localhost:4000/dream_reality/2019/01/12/note002.html">&lt;p&gt;&lt;span style=&quot;color:red&quot;&gt; 
-究极乌托邦 社会发展极端 社会主义极端 宿舍集中训练 背单词 同学被杀 深夜protest被记名 轮回后在同学被杀回逃出 不带手机 同学掩护 中途跳车逃到李村 公交车休息站 老师掩护被一堆莫名其妙的枪和武器指着 路过一个村庄的时候变身动物 可以各种分身然后留下分身的人偶 可爱的蜥蜴样子 村民被杀
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;color:blue&quot;&gt; 
-在垃圾场看到的电视堆 我一直想要画这么一副类似的画 因为我很喜欢白南准 我画的第一次草稿 老师说我画的太写实了 在那以后我再也没画 我现在越来越讨厌我学画的经历 但越来越感谢我有一个好老师
-&lt;/span&gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;br /&gt; &amp;gt;
-&lt;img src=&quot;/assets/images/dream_reality/2.jpg&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">究极乌托邦 社会发展极端 社会主义极端 宿舍集中训练 背单词 同学被杀 深夜protest被记名 轮回后在同学被杀回逃出 不带手机 同学掩护 中途跳车逃到李村 公交车休息站 老师掩护被一堆莫名其妙的枪和武器指着 路过一个村庄的时候变身动物 可以各种分身然后留下分身的人偶 可爱的蜥蜴样子 村民被杀</summary></entry><entry><title type="html">Untitled</title><link href="http://localhost:4000/artwork/2018/07/31/painting014.html" rel="alternate" type="text/html" title="Untitled" /><published>2018-07-31T00:00:00-07:00</published><updated>2018-07-31T00:00:00-07:00</updated><id>http://localhost:4000/artwork/2018/07/31/painting014</id><content type="html" xml:base="http://localhost:4000/artwork/2018/07/31/painting014.html"></content><author><name>Zeyu Yun</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/artwork/painting014.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/artwork/painting014.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Last Silueta</title><link href="http://localhost:4000/artwork/2018/07/31/painting013.html" rel="alternate" type="text/html" title="Last Silueta" /><published>2018-07-31T00:00:00-07:00</published><updated>2018-07-31T00:00:00-07:00</updated><id>http://localhost:4000/artwork/2018/07/31/painting013</id><content type="html" xml:base="http://localhost:4000/artwork/2018/07/31/painting013.html"></content><author><name>Zeyu Yun</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/artwork/painting013.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/artwork/painting013.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Untitled</title><link href="http://localhost:4000/artwork/2018/07/31/painting011.html" rel="alternate" type="text/html" title="Untitled" /><published>2018-07-31T00:00:00-07:00</published><updated>2018-07-31T00:00:00-07:00</updated><id>http://localhost:4000/artwork/2018/07/31/painting011</id><content type="html" xml:base="http://localhost:4000/artwork/2018/07/31/painting011.html"></content><author><name>Zeyu Yun</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/artwork/painting011.gif" /><media:content medium="image" url="http://localhost:4000/assets/images/artwork/painting011.gif" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Floral Sea</title><link href="http://localhost:4000/artwork/2018/07/31/painting010.html" rel="alternate" type="text/html" title="Floral Sea" /><published>2018-07-31T00:00:00-07:00</published><updated>2018-07-31T00:00:00-07:00</updated><id>http://localhost:4000/artwork/2018/07/31/painting010</id><content type="html" xml:base="http://localhost:4000/artwork/2018/07/31/painting010.html"></content><author><name>Zeyu Yun</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/artwork/painting010.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/artwork/painting010.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/images/dream_reality/3.jpg&quot; alt=&quot;image info&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">与此同时 我没有办法依赖于他们中任何一个 因为很讽刺的是 在◾◾◾的作用下 这一切感觉本身都是虚假的 当我尝试新的存在形式 得到的只有循环和失败 然后进入下一个循环 然后失败 而这一切虚假的原因是我并没有改变整个世界的构造 我改变的只是我自己 只要我的意志在三维空间 无论我的意识怎么努力 我也无法理解四维空间</summary></entry></feed>
