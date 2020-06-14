@@ -15,7 +15,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.JEKYLL_PAT}}
           # GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
           # GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+        # uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+        uses: helaili/jekyll-action@2.0.1
 # name: Build and deploy Jekyll site to GitHub Pages
 
 # on:
