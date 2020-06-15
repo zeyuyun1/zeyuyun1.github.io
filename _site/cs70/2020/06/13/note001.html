@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeyu Yun</title>
@@ -9,7 +8,7 @@
   
     
       <meta property="og:title" content="Note 001 Propositional Logic and Quantifiers (12 mins read)">
-      <meta property="og:description" content="Note 001 Propositional Logic and Quantifiers (12 mins read)            Proposition are functions that takes in some input and output True or False:For example, we can define the proposition “x is greater than 5” as $P(x)$. If we replace ...">
+      <meta property="og:description" content="Note 001 Propositional Logic and Quantifiers (12 mins read)                Proposition are functions that takes in some input and output True or False:For example, we can define the proposition “x is greater than 5” as . If we replace x ...">
       <meta name="twitter:card" content="summary">
     
   
@@ -19,7 +18,6 @@
   <link rel="stylesheet" type="text/css" href="/assets/lib/normalize/normalize.css">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="stylesheet" href="/assets/custom.css">
-<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]]}});</script>
 </head>
 
 <body>
@@ -34,35 +32,35 @@
         
           
           
-          <li>
+          <li >
             <a href="/artwork">Artwork</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/dream_reality">Dream_Reality</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/birthday">Birthday</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/cs70">CS70</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/cv">CV</a>
             
             </li>
@@ -77,12 +75,13 @@
       <article class="post-wrapper text-wrapper">
   <header>
     <h1>Note 001 Propositional Logic and Quantifiers (12 mins read)</h1>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   </header>
   <section class="post-content text-content">
     
     <h3 id="proposition-are-functions-that-takes-in-some-input-and-output-true-or-false">Proposition are functions that takes in some input and output True or False:</h3>
 
-<p>For example, we can define the proposition “x is greater than 5” as $P(x)$. If we replace x with 4, it will make the statement becomes “4 is greater than 5”, a wrong statement. If we replace x with 6, it will make the statement becomes “6 is greater than 5”, a true statement. Wow, it’s just like a function in python :</p>
+<p>For example, we can define the proposition “x is greater than 5” as <script type="math/tex">P(x)</script>. If we replace x with 4, it will make the statement becomes “4 is greater than 5”, a wrong statement. If we replace x with 6, it will make the statement becomes “6 is greater than 5”, a true statement. Wow, it’s just like a function in python :</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 P(x)= \left\{
@@ -92,7 +91,7 @@ P(x)= \left\{
 \end{array} 
 \right. %]]></script>
 
-<p>Similarly, “x is less than 6” can be written as $Q(x)$ such that:</p>
+<p>Similarly, “x is less than 6” can be written as <script type="math/tex">Q(x)</script> such that:</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 Q(x)= \left\{
@@ -113,18 +112,20 @@ Q(x) \wedge P(x) = \left\{
 \right. %]]></script>
 
 <p>Here’s today’s exercise: Prove the above expression is correct. Hint: use Truth Table (because this is the only way you learnt so far to prove things)</p>
-<h3 id="what-exactly-is-universal-quantifier-forall-and-exists">What exactly is Universal Quantifier $\forall$ and $\exists$:</h3>
+<h3 id="what-exactly-is-universal-quantifier-forall-and-exists">What exactly is Universal Quantifier <script type="math/tex">\forall</script> and <script type="math/tex">\exists</script>:</h3>
 
-<p>The $\forall$ is a sequence of “and” and $\exists$ is a sequence of “or”. Although this is in your note, I cannot stress it more. For example, we can denote the proposition “x is non-negative” as P(x). And what’s the statement “All natural number are non-negative” in propositional logic? It is</p>
+<p>The <script type="math/tex">\forall</script> is a sequence of “and” and <script type="math/tex">\exists</script> is a sequence of “or”. Although this is in your note, I cannot stress it more. For example, we can denote the proposition “x is non-negative” as P(x). And what’s the statement “All natural number are non-negative” in propositional logic? It is</p>
 
-<p>$(\forall n \in \mathbb{N}) P(n)$, which is equivalently as $P(0) \wedge P(1) \wedge P(2) \wedge P(3) …$</p>
+<p><script type="math/tex">(\forall n \in \mathbb{N}) P(n)</script>, which is equivalently as <script type="math/tex">P(0) \wedge P(1) \wedge P(2) \wedge P(3) ...</script></p>
 
-<p>Similarly, the statement “for any real number x, there is natural number greater than x” can be written as $(\forall x \in  \mathbb{R} ) (\exists n \in \mathbb{N}) x &lt; n$, which can be expanded as $(\forall x \in \mathbb{R}) (x&lt;1) \vee (x&lt;2) \vee (x&lt;3) \vee (x&lt;4) …$ 
-This is one of the most important theorem in anlysis, which is probably be the first thing you learn if you take Math 104. Notice I expaned $\exists n \in \mathbb{N} $ using the “or” operator “$\vee$”, but I cannot expand $(\forall x \in  \mathbb{R} )$, this is simply because I cannot iterate through all the real number. Formally, real numbers are “uncountable” and we will learn about this later.</p>
+<p>Similarly, the statement “for any real number x, there is natural number greater than x” can be written as <script type="math/tex">% <![CDATA[
+(\forall x \in  \mathbb{R} ) (\exists n \in \mathbb{N}) x < n %]]></script>, which can be expanded as <script type="math/tex">% <![CDATA[
+(\forall x \in \mathbb{R}) (x<1) \vee (x<2) \vee (x<3) \vee (x<4) ... %]]></script>
+This is one of the most important theorem in anlysis, which is probably be the first thing you learn if you take Math 104. Notice I expaned <script type="math/tex">\exists n \in \mathbb{N}</script> using the “or” operator “<script type="math/tex">\vee</script>”, but I cannot expand <script type="math/tex">(\forall x \in  \mathbb{R} )</script>, this is simply because I cannot iterate through all the real number. Formally, real numbers are “uncountable” and we will learn about this later.</p>
 
-<p><br></p>
+<p><br /></p>
 
-<p><img src="/assets/images/cs70/w1.gif" alt="image info"></p>
+<p><img src="/assets/images/cs70/w1.gif" alt="image info" /></p>
 
 <p>Here’s a daily dose of kirara.</p>
 
@@ -133,12 +134,11 @@ This is one of the most important theorem in anlysis, which is probably be the f
     <p><a href="javascript:history.go(-1)">&lt; Back</a></p>
   </aside>
 </article>
-
     </section>
     <footer class="site-footer">
   <p class="copyright">
     
-      © 2019-2020.
+      &copy; 2019-2020.
       <a href="mailto:chobitstian@berkeley.edu">Zeyu Yun</a>
       ALL RIGHTS RESERVED.
     

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeyu Yun</title>
@@ -9,7 +8,7 @@
   
     
       <meta property="og:title" content="Note 002 Proofs (10 mins read)">
-      <meta property="og:description" content="Note 002 Proofs (10 mins read)            How to prove an implication is correct?I got asked by this a lot: How do you prove “If P then Q”? You might encounter this question even bofore taking this class. And you probably know what to do...">
+      <meta property="og:description" content="Note 002 Proofs (10 mins read)                How to prove an implication is correct?I got asked by this a lot: How do you prove “If P then Q”? You might encounter this question even bofore taking this class. And you probably know what t...">
       <meta name="twitter:card" content="summary">
     
   
@@ -19,7 +18,6 @@
   <link rel="stylesheet" type="text/css" href="/assets/lib/normalize/normalize.css">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="stylesheet" href="/assets/custom.css">
-<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]]}});</script>
 </head>
 
 <body>
@@ -34,35 +32,35 @@
         
           
           
-          <li>
+          <li >
             <a href="/artwork">Artwork</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/dream_reality">Dream_Reality</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/birthday">Birthday</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/cs70">CS70</a>
             
             </li>
         
           
           
-          <li>
+          <li >
             <a href="/cv">CV</a>
             
             </li>
@@ -77,6 +75,7 @@
       <article class="post-wrapper text-wrapper">
   <header>
     <h1>Note 002 Proofs (10 mins read)</h1>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   </header>
   <section class="post-content text-content">
     
@@ -106,7 +105,7 @@ Assume P is True,</p>
 
 <p>Next, the mathematical way, make sure, make sure you understand this, in fact, if you do, then your understanding is already above the curve:</p>
 
-<p>Consider the Truth table for “If P then Q” aka, $ P \implies Q$</p>
+<p>Consider the Truth table for “If P then Q” aka, <script type="math/tex">P \implies Q</script></p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{array}{C|C|C|}
@@ -118,7 +117,7 @@ T & F & F\\
 \color{red}F & \color{red}F & \color{red}T
 \end{array} %]]></script>
 
-<p>How do we prove $p\implies q$ is true? We only need to consider the above three line that’s colored in red in the true table, which are all related to $p \implies q$ being True. If we assume P is False, that goes to the the last two line, no matter what Q is, P will be True. If we assume P is True, we need to prove Q is true in order for $P\implies Q$ to be True. That’s why we don’t bother to assume P is False. That’s why the general proving technique is:</p>
+<p>How do we prove <script type="math/tex">p\implies q</script> is true? We only need to consider the above three line that’s colored in red in the true table, which are all related to <script type="math/tex">p \implies q</script> being True. If we assume P is False, that goes to the the last two line, no matter what Q is, P will be True. If we assume P is True, we need to prove Q is true in order for <script type="math/tex">P\implies Q</script> to be True. That’s why we don’t bother to assume P is False. That’s why the general proving technique is:</p>
 
 <p>”
 Assume P is True,</p>
@@ -128,9 +127,9 @@ Assume P is True,</p>
 <p>Conclude Q is true
 “</p>
 
-<p><br></p>
+<p><br /></p>
 
-<p><img src="/assets/images/cs70/w2.gif" alt="image info"></p>
+<p><img src="/assets/images/cs70/w2.gif" alt="image info" /></p>
 
 <p>Here’s a daily dose of kirara.</p>
 
@@ -139,12 +138,11 @@ Assume P is True,</p>
     <p><a href="javascript:history.go(-1)">&lt; Back</a></p>
   </aside>
 </article>
-
     </section>
     <footer class="site-footer">
   <p class="copyright">
     
-      © 2019-2020.
+      &copy; 2019-2020.
       <a href="mailto:chobitstian@berkeley.edu">Zeyu Yun</a>
       ALL RIGHTS RESERVED.
     
