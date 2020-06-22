@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeyu Yun</title>
+
+  
+    
+      <meta property="og:title" content="Note 004 Set/Function (20 mins read)">
+      <meta property="og:description" content="Note 004 Set/Function (20 mins read)                Induction does not always work!I am going to prove a false Theorem, see if you can notice where the proves went wrong.Theorem  The power set of  is countable.“Proof”  We proceed the ind...">
+      <meta name="twitter:card" content="summary">
+    
+  
+
+  <meta property="og:url" content="http://localhost:4000/cs70/2020/06/13/note005.html">
+
+  <link rel="stylesheet" type="text/css" href="/assets/lib/normalize/normalize.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/custom.css">
+</head>
+
+<body>
+  <div class="global-wrapper">
+    <header class="site-header">
+      <h1><a href="/">Zeyu Yun</a></h1>
+      
+      <section class="navigation">
+  <nav>
+    
+      <ul class="nav-main nav-uppercase">
+        
+          
+          
+          <li >
+            <a href="/artwork">Artwork</a>
+            
+            </li>
+        
+          
+          
+          <li >
+            <a href="/dream_reality">Dream_Reality</a>
+            
+            </li>
+        
+          
+          
+          <li >
+            <a href="/birthday">Birthday</a>
+            
+            </li>
+        
+          
+          
+          <li >
+            <a href="/cs70">CS70</a>
+            
+            </li>
+        
+          
+          
+          <li >
+            <a href="/cv">CV</a>
+            
+            </li>
+        
+      </ul>
+    
+  </nav>
+</section>
+
+    </header>
+    <section class="site-content ">
+      <article class="post-wrapper text-wrapper">
+  <header>
+    <h1>Note 004 Set/Function (20 mins read)</h1>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+  <section class="post-content text-content">
+    
+    <h3 id="induction-does-not-always-work">Induction does not always work!</h3>
+
+<p>I am going to prove a false Theorem, see if you can notice where the proves went wrong.</p>
+
+<p><strong>Theorem</strong>  The power set of <script type="math/tex">\mathbb{N}</script> is countable.</p>
+
+<p><em>“Proof”</em>  We proceed the induction on <script type="math/tex">\mathbb{N}</script></p>
+
+<p>Base case: k=0, <script type="math/tex">\mathcal{P} (0) =  \emptyset</script>, which is indeed countable.</p>
+
+<p>Induction step: Assume that <script type="math/tex">\mathcal{P}(n)</script> is countable. We call it <script type="math/tex">n+1th</script> element as <script type="math/tex">s_{n+1}</script>, then <script type="math/tex">\mathcal{P}(n+1)</script> can be broken down to a collection of sets that do not contain <script type="math/tex">s_{n+1}</script>, and a collection of sets that contains <script type="math/tex">s_{n+1}</script> element. Clearly, the first collection is exactly <script type="math/tex">\mathcal{P}(n)</script>, the second collection is every set in <script type="math/tex">\mathcal{P}(n)</script> with the addition of <script type="math/tex">s_{n+1}</script>. Formally, <script type="math/tex">\{ S \cup s_{n+1}  mid\ S \in  \mathcal{P}(n) \}</script> Since you learnt in the lecture that union of two countable set is countable. We proved that <script type="math/tex">\mathcal{P}(n+1)</script> is countable. So <script type="math/tex">\mathcal{P}(\mathbb{N})</script> is countable.</p>
+
+<p>Where’s wrong?</p>
+
+<p>Well, first of all, which part of the proof did we do right?</p>
+
+<p>Actually only the very last part is wrong! Did you get it? We proved that <script type="math/tex">\forall n \in \mathbb{N} \mathcal{P}(n)</script> is countable. More then that, it’s finite. If I give you any number, you can list out the powerset (using bit string). But that doesn’t mean <script type="math/tex">\mathcal{P}(\mathbb{N})</script> because <script type="math/tex">\mathcal{P}(\mathbb{N})</script> is infinite.</p>
+
+<h3 id="axiom-of-choice">Axiom of Choice</h3>
+<p>(Try to read this part, if you don’t understand it, it’s fine because it’s outside the scope, but if you do understand it then you can assure that you will be doing really well in the class)</p>
+
+<p>The idea of Axiom of choice is simple. It states that if you have a collection of sets, you can always select one element from each set. If you have finite amounts of those sets, even thought you can’t physically pick an element, you can still argue you can pick an element from each set one if it’s not empty until you did it to all sets. But what if we have infinite many of those sets? Can you pick an element from each set if there are infinite amount of sets?</p>
+
+<p>The answer is unknown. At least you can’t prove it in mathematic without assuming stronger condition. Thus, it can be considered as an Axiom. You can whether accept it or not accept it. Mathematic are built upon Axioms. Just like “1+1 =2”, if you accept “1+1 =2” as an Axiom, you can prove a lot of nice things from it. If you don’t, then the mathematic world will be much more restricted.</p>
+
+<p>Formally,</p>
+
+<p><strong>Axiom of Choice</strong>  Let <script type="math/tex">\mathcal{C}</script> be any collection of nonempty sets. Then there is a function <script type="math/tex">F</script> defined on <script type="math/tex">\mathcal{C}</script> which assigns to each set <script type="math/tex">A \in \mathcal{C}</script> an element <script type="math/tex">F(A)</script> in <script type="math/tex">A</script></p>
+
+<p>First daily excercise: Write out Axiom of Choice using proper propositional logic like you learnt in class.</p>
+
+<p>Second daily excercise: Let <script type="math/tex">f: X \to Y</script> be a mapping onto Y. Show that the right inverse of f exist. In other word, show that you can find a function <script type="math/tex">f^{-1}: Y \to X</script> such that <script type="math/tex">f (f^{-1}(a)) = a</script> for all <script type="math/tex">a \in A</script></p>
+
+<p>This question looks intimidating but it’s not hard at all. Try to draw a picture of a onto function yourself. Here’s what I have:</p>
+
+<p><img src="/assets/images/cs70_math/on_2.png" alt="image info" /></p>
+
+<p>All we need to do is to find a one-to-one function that maps from the right to the left. (Why?) For this picture, it’s easy.</p>
+
+<p><img src="/assets/images/cs70_math/on.png" alt="image info" /></p>
+
+<p>What about the general case?</p>
+
+<p>Hint 1: Try to break down the domain, X, into “A collection of sets”. What’s a natural break down.</p>
+
+<p>Hint 2: Break down the the domain according to the image of each element in the domain, if to elements are mapped to the same thing, they should be in the same set.</p>
+
+<p>Hint 3: Consider the collection <script type="math/tex">\{ A : (\exists y \in Y), A = f^{-1} [ \{ y \} ] \}</script></p>
+
+<p><img src="/assets/images/cs70/w6.gif" alt="image info" /></p>
+
+<p>Here’s a daily dose of kirara.</p>
+
+  </section>
+  <aside>
+    <p><a href="javascript:history.go(-1)">&lt; Back</a></p>
+  </aside>
+</article>
+    </section>
+    <footer class="site-footer">
+  <p class="copyright">
+    
+      &copy; 2019-2020.
+      <a href="mailto:chobitstian@berkeley.edu">Zeyu Yun</a>
+      ALL RIGHTS RESERVED.
+    
+  </p>
+</footer>
+
+  </div>
+  <script type="text/javascript" src="/assets/custom.js"></script>
+</body>
+</html>
