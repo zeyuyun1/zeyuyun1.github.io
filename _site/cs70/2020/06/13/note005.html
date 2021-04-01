@@ -8,7 +8,7 @@
   
     
       <meta property="og:title" content="Note 004 Set/Function (20 mins read)">
-      <meta property="og:description" content="Note 004 Set/Function (20 mins read)                Induction does not always work!I am going to prove a false Theorem, see if you can notice where the proves went wrong.Theorem  The power set of  is countable.“Proof”  We proceed the ind...">
+      <meta property="og:description" content="Note 004 Set/Function (20 mins read)                Induction does not always work!I am going to prove a false Theorem, see if you can notice where the proves went wrong.Theorem  The power set of \(\mathbb{N}\) is countable.“Proof”  We p...">
       <meta name="twitter:card" content="summary">
     
   
@@ -33,21 +33,21 @@
           
           
           <li >
-            <a href="/artwork">Artwork</a>
+            <a href="/research">Research</a>
             
             </li>
         
           
           
           <li >
-            <a href="/dream_reality">Dream_Reality</a>
+            <a href="/project">Project</a>
             
             </li>
         
           
           
           <li >
-            <a href="/birthday">Birthday</a>
+            <a href="/artwork">Gallery</a>
             
             </li>
         
@@ -55,13 +55,6 @@
           
           <li >
             <a href="/cs70">CS70</a>
-            
-            </li>
-        
-          
-          
-          <li >
-            <a href="/cv">CV</a>
             
             </li>
         
@@ -83,19 +76,19 @@
 
 <p>I am going to prove a false Theorem, see if you can notice where the proves went wrong.</p>
 
-<p><strong>Theorem</strong>  The power set of <script type="math/tex">\mathbb{N}</script> is countable.</p>
+<p><strong>Theorem</strong>  The power set of \(\mathbb{N}\) is countable.</p>
 
-<p><em>“Proof”</em>  We proceed the induction on <script type="math/tex">\mathbb{N}</script></p>
+<p><em>“Proof”</em>  We proceed the induction on \(\mathbb{N}\)</p>
 
-<p>Base case: k=0, <script type="math/tex">\mathcal{P} (0) =  \emptyset</script>, which is indeed countable.</p>
+<p>Base case: k=0, \(\mathcal{P} (0) =  \emptyset\), which is indeed countable.</p>
 
-<p>Induction step: Assume that <script type="math/tex">\mathcal{P}(n)</script> is countable. We call it <script type="math/tex">n+1th</script> element as <script type="math/tex">s_{n+1}</script>, then <script type="math/tex">\mathcal{P}(n+1)</script> can be broken down to a collection of sets that do not contain <script type="math/tex">s_{n+1}</script>, and a collection of sets that contains <script type="math/tex">s_{n+1}</script> element. Clearly, the first collection is exactly <script type="math/tex">\mathcal{P}(n)</script>, the second collection is every set in <script type="math/tex">\mathcal{P}(n)</script> with the addition of <script type="math/tex">s_{n+1}</script>. Formally, <script type="math/tex">\{ S \cup s_{n+1}  \mid S \in  \mathcal{P}(n) \}</script> Since you learnt in the lecture that union of two countable set is countable. We proved that <script type="math/tex">\mathcal{P}(n+1)</script> is countable. So <script type="math/tex">\mathcal{P}(\mathbb{N})</script> is countable.</p>
+<p>Induction step: Assume that \(\mathcal{P}(n)\) is countable. We call it \(n+1th\) element as \(s_{n+1}\), then \(\mathcal{P}(n+1)\) can be broken down to a collection of sets that do not contain \(s_{n+1}\), and a collection of sets that contains \(s_{n+1}\) element. Clearly, the first collection is exactly \(\mathcal{P}(n)\), the second collection is every set in \(\mathcal{P}(n)\) with the addition of \(s_{n+1}\). Formally, \(\{ S \cup s_{n+1}  \mid S \in  \mathcal{P}(n) \}\) Since you learnt in the lecture that union of two countable set is countable. We proved that \(\mathcal{P}(n+1)\) is countable. So \(\mathcal{P}(\mathbb{N})\) is countable.</p>
 
 <p>Where’s wrong?</p>
 
 <p>Well, first of all, which part of the proof did we do right?</p>
 
-<p>Actually only the very last part is wrong! Did you get it? We proved that <script type="math/tex">\forall n \in \mathbb{N} \mathcal{P}(n)</script> is countable. More then that, it’s finite. If I give you any number, you can list out the powerset (using bit string). But that doesn’t mean <script type="math/tex">\mathcal{P}(\mathbb{N})</script> because <script type="math/tex">\mathcal{P}(\mathbb{N})</script> is infinite.</p>
+<p>Actually only the very last part is wrong! Did you get it? We proved that \(\forall n \in \mathbb{N} \mathcal{P}(n)\) is countable. More then that, it’s finite. If I give you any number, you can list out the powerset (using bit string). But that doesn’t mean \(\mathcal{P}(\mathbb{N})\) because \(\mathcal{P}(\mathbb{N})\) is infinite.</p>
 
 <h3 id="axiom-of-choice">Axiom of Choice</h3>
 <p>(Try to read this part, if you don’t understand it, it’s fine because it’s outside the scope, but if you do understand it then you can assure that you will be doing really well in the class)</p>
@@ -106,11 +99,11 @@
 
 <p>Formally,</p>
 
-<p><strong>Axiom of Choice</strong>  Let <script type="math/tex">\mathcal{C}</script> be any collection of nonempty sets. Then there is a function <script type="math/tex">F</script> defined on <script type="math/tex">\mathcal{C}</script> which assigns to each set <script type="math/tex">A \in \mathcal{C}</script> an element <script type="math/tex">F(A)</script> in <script type="math/tex">A</script></p>
+<p><strong>Axiom of Choice</strong>  Let \(\mathcal{C}\) be any collection of nonempty sets. Then there is a function \(F\) defined on \(\mathcal{C}\) which assigns to each set \(A \in \mathcal{C}\) an element \(F(A)\) in \(A\)</p>
 
 <p>First daily excercise: Write out Axiom of Choice using proper propositional logic like you learnt in class.</p>
 
-<p>Second daily excercise: Let <script type="math/tex">f: X \to Y</script> be a mapping onto Y. Show that the right inverse of f exist. In other word, show that you can find a function <script type="math/tex">f^{-1}: Y \to X</script> such that <script type="math/tex">f (f^{-1}(a)) = a</script> for all <script type="math/tex">a \in A</script></p>
+<p>Second daily excercise: Let \(f: X \to Y\) be a mapping onto Y. Show that the right inverse of f exist. In other word, show that you can find a function \(f^{-1}: Y \to X\) such that \(f (f^{-1}(a)) = a\) for all \(a \in A\)</p>
 
 <p>This question looks intimidating but it’s not hard at all. Try to draw a picture of a onto function yourself. Here’s what I have:</p>
 
@@ -126,16 +119,16 @@
 
 <p>Hint 2: Break down the the domain according to the image of each element in the domain, if to elements are mapped to the same thing, they should be in the same set.</p>
 
-<p>Hint 3: Consider the collection <script type="math/tex">\{ A : (\exists y \in Y), A = f^{-1} [ \{ y \} ] \}</script></p>
+<p>Hint 3: Consider the collection \(\{ A : (\exists y \in Y), A = f^{-1} [ \{ y \} ] \}\)</p>
 
 <p><img src="/assets/images/cs70/w6.gif" alt="image info" /></p>
 
 <p>Here’s a daily dose of kirara.</p>
 
   </section>
-  <aside>
+<!--   <aside>
     <p><a href="javascript:history.go(-1)">&lt; Back</a></p>
-  </aside>
+  </aside> -->
 </article>
     </section>
     <footer class="site-footer">

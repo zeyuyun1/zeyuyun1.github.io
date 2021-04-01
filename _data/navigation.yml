@@ -1,11 +1,13 @@
 items:
-- title: Artwork
+- title: Research
+  url: /research
+- title: Project
+  url: /project
+- title: Gallery
   url: /artwork
-- title: Dream_Reality
-  url: /dream_reality
-- title: Birthday
-  url: /birthday
+# - title: Dream_Reality
+#   url: /dream_reality
+# - title: Birthday
+#   url: /birthday
 - title: CS70
   url: /cs70
-- title: CV
-  url: /cv
