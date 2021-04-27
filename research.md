@@ -48,7 +48,7 @@ navItemTitle: Research
    <div class="post-title" >Zeyu Yun*, Yubei Chen*, Bruno A Olshausen, Yann LeCun</div> 
    <br>
    <a style= "color: #0000EE" href="https://arxiv.org/pdf/2103.15949.pdf">[arXiv]</a> <a style= "color: #0000EE" href="https://transformervis.github.io/transformervis/">[Demo]</a> <br>
-   <data class = "post-title"> <i>NAACL DeeLIO Workshop 2021 (Under Review)</i></data> <br>
+   <data class = "post-title"> <i>NAACL DeeLIO Workshop 2021 </i></data> <br>
 	<div class="description" >We propose to use dictionary learning to visualize transformer model. Through visualization, we demonstrate the hierarchical semantic structures captured by the transformer factors, e.g. word-level polysemy disambiguation, sentence-level pattern formation, and long-range dependency. While some of these patterns confirm the conventional prior linguistic knowledge, the rest are relatively unexpected, which may provide new insights.</div>
 
    <!-- <p style="display:inline">post description descrietc etc</p> -->
