@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="post-wrapper artwork-wrapper">
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <section class="post-content artwork-content">
+    {% if page.image %}
+      <section class="post-image artwork-image">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        {% if page.caption %}
+          <p>{{ page.caption }}</p>
+        {% endif %}
+      </section>
+    {% endif %}
+    {% if page.video %}
+      <section class="post-image artwork-image">
+        <video id="player" style = "display: block;margin: 0 auto;max-width: 80%;max-height: 720px;" playsinline controls data-poster="/path/to/poster.jpg">
+            <source src="{{ page.video | relative_url }}"  type="video/mp4" />
+        </video>
+        <!-- <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"> -->
+        {% if page.caption %}
+          <p>{{ page.caption }}</p>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {{ content }}
+  </section>
+  <aside>
+    <p><a href="javascript:history.go(-1)">&lt; Back</a></p>
+  </aside>
+</article>
