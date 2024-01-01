@@ -1,41 +1,69 @@
-.global-wrapper .site-content .posts-content .artworks-list li .caption {
-  display: block;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  word-wrap: normal !important;
-  color: dimgray;
-}
-.global-wrapper .site-header .tagline {
-  display: none;
+/* To customize, Write your code here. */
+.post-container {
+  display: flex; /* Use flexbox to layout children */
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  margin-bottom: 30px; /* Spacing at the bottom */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%; /* Full width of the parent */
 }
 
-img {
-  max-width: 100%;
+.post-thumb {
+  flex: 0 0 auto; /* Do not grow or shrink */
+  margin-right: 20px; /* Spacing to the right of the image */
 }
 
-.global-wrapper .site-content .artwork-wrapper .artwork-content .artwork-image img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 720px
+.post-thumb img {
+  width: auto; /* Auto width based on the actual image size */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 20vw; /* Max width of the image */
+  max-height: 15vw; /* Max height to maintain aspect ratio */
+  min-width: 20vw;
 }
 
-.global-wrapper .site-content .artwork-wrapper .artwork-content .artwork-image p {
-  text-align: center;
-  line-height: 1.4;
-  font-size: 0.8rem;
+
+.post-content {
+  flex: 1; /* Take up the remaining space */
+  min-width: 0; /* Prevents flex items from overflowing their container */
 }
 
-@media all and (max-width: 960px) {
-  .global-wrapper .site-content .artwork-wrapper .artwork-content .artwork-image img {
-    max-width: 100%
+.post-title, .post-authors, .description, .post-venue{
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  /* color: #2b2a2a; */
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 0px; /* Spacing between title and authors */
+  color: #000000;
+}
+
+.post-venue {
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+}
+
+a.publication-link {
+  color: #0000EE;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .post-container {
+      flex-direction: column; /* Stack children vertically */
   }
-}
 
-@media all and (max-width: 640px) {
-  .global-wrapper .site-content .artwork-wrapper .artwork-content .artwork-image img {
-    max-width: 100%
+  .post-thumb {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 10px; /* Spacing below the image */
+  }
+
+  .post-thumb img {
+      max-width: 100%; /* Allow the image to be full width */
+      max-height: none; /* Remove max height restriction */
   }
 }

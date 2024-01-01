@@ -1,5 +1,5 @@
 title: Zeyu Yun
-remote_theme: jekyll-theme-lightning/lightning
+# remote_theme: jekyll-theme-lightning/lightning
 plugins:
   - jekyll-seo-tag
   # - jekyll-spaceship

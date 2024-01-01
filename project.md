@@ -4,7 +4,7 @@ title: Project
 permalink: /project
 navItemTitle: Project
 ---
-
+<!-- 
 <style type="text/css"> .post-container{
     margin: 20px 20px 0 0;  
     /*border:5px solid #333;*/
@@ -47,7 +47,7 @@ navItemTitle: Project
 
 .post-content {
     /*float:right;*/
-}</style>
+}</style> -->
 
 <div class="post-container">                
    <div class="post-thumb"><img src="/assets/images/project/Picture1.png" /></div>

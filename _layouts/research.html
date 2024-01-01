@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<!-- <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}"> -->
+<h1>Short Bio</h1>
+<section class="description">
+I was born and raised in China in Jinan and Qingdao, China. I came to US alone at aged 15 and 
+graduated at Clovis North High School in Fresno, CA. I graduated from UC Berkeley with a <strong>double
+ major</strong> in Computer Sciecne and Mathmetics with <strong>highest distinction</strong>. During my undergradute,
+  I'm very fortunate to be advised by Prof. <strong><a href="https://www.rctn.org/bruno/" target="_blank" class="publication-link">Bruno Olshausen</a></strong> and Prof. <strong><a href="https://yubeichen.com/" target="_blank" class="publication-link">Yubei Chen</a></strong>.
+   I'm also very fortunate to be member of <strong><a href="https://redwood.berkeley.edu/" target="_blank" class="publication-link">Redwood Center for Theoretical Neuroscience</a></strong>. 
+   I'm currently a M.S. Student in EECS at UC Berkeley, advised by Prof. <strong><a href="https://www.rctn.org/bruno/" target="_blank" class="publication-link">Bruno Olshausen</a></strong>. 
+</br>
+   I'm currently working on motion and form factorization model for early visual processing. 
+   I’m generally interested in <strong>NeuroAI</strong>, exploring the rich connection between machine learning 
+   and computational neuroscience. My research focuses on building neural computation models for stable perception 
+and using these models to improve the efficiency, interpretability, and generalizability of 
+popular machine learning algorithms.
+</br>
+Feel free to email me at chobitstian@berkeley.edu if you are interested about my research or anything else!
+</section>
+
+<h1>Publications</h1>
+<div class="publications">
+  {% assign reversed_publications = site.data.publications | reverse %}
+  {% for publication in reversed_publications %}
+    {% if publication.published %}
+      <div class="post-container">
+        <div class="post-thumb">
+          <img src="{{ publication.image }}" alt="{{ publication.title }}">
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">{{ publication.title }}</h2>
+          
+          {% assign authors_with_links = publication.authors %}
+          {% if authors_with_links contains 'Zeyu Yun' %}
+            {% assign authors_with_links = authors_with_links | replace: 'Zeyu Yun', '<strong>Zeyu Yun</strong>' %}
+          {% endif %}
+          {% for author in site.data.links %}
+            {% capture author_link %}<a href="{{ author.website }}" target="_blank" class="publication-link">{{ author.name }}</a>{% endcapture %}
+            {% assign authors_with_links = authors_with_links | replace: author.name, author_link %}
+          {% endfor %}
+          <div class="post-authors">{{ authors_with_links | safe }}</div>
+
+          {% if publication.arxiv_link %}
+            <a class="publication-link" href="{{ publication.arxiv_link }}">[arXiv]</a>
+          {% endif %}
+          {% if publication.demo_link %}
+            <a class="publication-link" href="{{ publication.demo_link }}">[Demo]</a>
+          {% endif %}
+          {% if publication.venue %}
+          <div class="post-venue">{{ publication.venue}}</div>
+          {% endif %}
+          <div class="description">
+            {{ publication.abstract }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>Work under preperation</h1>
+<div class="publications">
+  {% assign reversed_publications = site.data.publications | reverse %}
+  {% for publication in reversed_publications %}
+    {% unless publication.published %}
+      <div class="post-container">
+        <div class="post-thumb">
+          <img src="{{ publication.image }}" alt="{{ publication.title }}">
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">{{ publication.title }}</h2>
+          {% assign authors_with_links = publication.authors %}
+          {% if authors_with_links contains 'Zeyu Yun' %}
+            {% assign authors_with_links = authors_with_links | replace: 'Zeyu Yun', '<strong>Zeyu Yun</strong>' %}
+          {% endif %}
+          {% for author in site.data.links %}
+            {% capture author_link %}<a href="{{ author.website }}" target="_blank" class="publication-link">{{ author.name }}</a>{% endcapture %}
+            {% assign authors_with_links = authors_with_links | replace: author.name, author_link %}
+          {% endfor %}
+          <!-- {% for author in site.data.authors %}
+            {% if author.name == 'Zeyu Yun' %}
+              {% assign bold_name = '<strong>' | append: author.name | append: '</strong>' %}
+              {% assign authors_with_links = authors_with_links | replace: author.name, bold_name %}
+            {% endif %}
+          {% endfor %} -->
+          <div class="post-authors">{{ authors_with_links | safe }}</div>
+          {% if publication.arxiv_link %}
+            <a class="publication-link" href="{{ publication.arxiv_link }}">[arXiv]</a>
+          {% endif %}
+          {% if publication.demo_link %}
+            <a class="publication-link" href="{{ publication.demo_link }}">[Demo]</a>
+          {% endif %}
+          {% if publication.venue %}
+          <div class="post-venue">{{ publication.venue}}</div>
+          {% endif %}
+          <div class="description">
+            {{ publication.abstract }}
+          </div>
+        </div>
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div>
+

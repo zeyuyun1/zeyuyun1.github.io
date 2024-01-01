@@ -1,0 +1,20 @@
+# _data/authors.yml
+- name: "Yubei Chen"
+  website: "https://yubeichen.com/"
+- name: "Juexiao Zhang"
+  website: "https://juexzz.github.io/"
+- name: "Yann LeCun"
+  website: "https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en"
+- name: "Bruno Olshausen"
+  website: "https://www.rctn.org/bruno/"
+- name: "Yi Ma"
+  website: "https://people.eecs.berkeley.edu/~yima/"
+- name: "Reza Abbasi-Asl"
+  website: "https://abbasilab.org/"
+- name: "Yazhou Zhao"
+  website: "https://yazhou-z.github.io/"
+- name: "Dasheng Bi"
+  website: "https://d-bi.github.io/"
+  
+  
+# Add more authors as needed

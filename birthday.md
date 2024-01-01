@@ -1,5 +1,5 @@
 ---
-layout: texts
+layout: text
 title: Birthday
 item: birthday
 permalink: /birthday
