@@ -5,6 +5,8 @@ items:
 #   url: /project
 - title: Gallery
   url: /artwork
+- title: CV
+  url: /assets/cv.pdf
 # - title: Dream_Reality
 #   url: /dream_reality
 # - title: Birthday
