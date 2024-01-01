@@ -16,7 +16,7 @@ network"
 - title: "Natural retinal cone distributions emerge from
 optical and neural limits to vision"
   authors: "Yazhou Zhao*, Zeyu Yun*, Ruichang Sun, and Dasheng Bi"
-  abstract: “We model visual system with a CA-constrained optical simulation and designed a learnable cone mosaic sampling. We show that the model’s emerged cone mosaic resembles a cone mosaic found in humans, when optimized for both spatial acuity and color acuity”
+  abstract: We model visual system with a chromatic aberration constrained optical simulation and designed a learnable cone mosaic sampling. We show that the model’s emerged cone mosaic resembles a cone mosaic found in humans, when optimized for both spatial acuity and color acuity.
   venue:  VSS 2024 in submission
   image: "/assets/images/research/retina.gif"
   published: false
@@ -42,7 +42,7 @@ The model remains competitive with deep learning methods. "
 
 - title: "URLOST: Unsupervised representation learning without stationarity or topology"
   authors: "Zeyu Yun, Juexiao Zhang, Bruno Olshausen, Yann LeCun, and Yubei Chen"
-  abstract: "We Developed an unsupervised learning model for generic high dimensional data. The model demonstrated exceptional
+  abstract: "We developed an unsupervised learning model for generic high dimensional data. The model demonstrated exceptional
 performance across diverse data modalities from neural recording to gene expression."
   venue:  ICLR 2024 (under Review)
   image: "/assets/images/research/urlost.png"
