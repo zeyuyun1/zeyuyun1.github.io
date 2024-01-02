@@ -50,6 +50,22 @@ a.publication-link {
   font-family: "Times New Roman", Times, serif;
 }
 
+.favorite-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.favorite-container img {
+  width: 100px; /* Adjust the size as needed */
+  vertical-align: middle; /* Align image vertically */
+  padding-right: 10px; /* Space between images */
+}
+
+.favorite-container a:last-child img {
+  padding-right: 0; /* No padding for the last image */
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

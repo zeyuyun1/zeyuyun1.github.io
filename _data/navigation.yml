@@ -7,6 +7,8 @@ items:
   url: /artwork
 - title: CV
   url: /assets/cv.pdf
+- title: MISC
+  url: /misc
 # - title: Dream_Reality
 #   url: /dream_reality
 # - title: Birthday
