@@ -5,22 +5,6 @@
   image: "/assets/images/research/stability.png"
   published: false
 
-- title: "Factorizing motion and form via motion straightening and resonator
-network"
-  authors: "Zeyu Yun and Bruno Olshausen"
-  abstract: "We applied the principles of sparsity and slowness to build representations for natural scenes. Then used coupled Hopfield network dyanmic to learn motion patterns and shape patterns."
-  venue:  in preparation
-  image: "/assets/images/research/factorization.gif"
-  published: false
-
-- title: "Natural retinal cone distributions emerge from
-optical and neural limits to vision"
-  authors: "Yazhou Zhao*, Zeyu Yun*, Ruichang Sun, and Dasheng Bi"
-  abstract: We model visual system with a chromatic aberration constrained optical simulation and designed a learnable cone mosaic sampling. We show that the model’s emerged cone mosaic resembles a cone mosaic found in humans, when optimized for both spatial acuity and color acuity.
-  venue:  VSS 2024 in submission
-  image: "/assets/images/research/retina.gif"
-  published: false
-
 - title: "Transformer visualization via dictionary learning:
 contextualized embedding as a linear superposition of transformer factors"
   authors: "Zeyu Yun*, Yubei Chen*, Bruno Olshausen, Yann LeCun"
@@ -40,11 +24,33 @@ The model remains competitive with deep learning methods. "
   arxiv_link: "https://arxiv.org/pdf/2103.15949.pdf"
   published: true
 
+- title: "Natural retinal cone distributions emerge from
+optical and neural limits to vision"
+  authors: "Yazhou Zhao*, Zeyu Yun*, Ruichang Sun, and Dasheng Bi"
+  abstract: We model visual system with a chromatic aberration constrained optical simulation and designed a learnable cone mosaic sampling. We show that the model’s emerged cone mosaic resembles a cone mosaic found in humans, when optimized for both spatial acuity and color acuity.
+  venue:  VSS 2024
+  image: "/assets/images/research/retina.gif"
+  published: true
+
+- title: "Denoising for Manifold Extrapolation"
+  authors: "Zeyu Yun, Galen Chuang, Derek Dong, Yubei Chen"
+  abstract: "We applied the principles of sparsity and temporal consistency to build a factorizable representations for natural scenes. "
+  venue:  NeurIPS SciForDL workshop 2024
+  image: "/assets/images/research/denoising.png"
+  published: true
+
+- title: "Predictive and Invariant Representations via Motion and Form Factorization in Natural Scenes"
+  authors: "Zeyu Yun, Christopher Kymn, Galen Chuang, Yubei Chen, Bruno Olshausen"
+  abstract: "We applied the principles of sparsity and temporal consistency to build a factorizable representations for natural scenes. "
+  venue:  Cosyne 2025
+  image: "/assets/images/research/factorize.png"
+  published: true
+
 - title: "URLOST: Unsupervised representation learning without stationarity or topology"
-  authors: "Zeyu Yun, Juexiao Zhang, Bruno Olshausen, Yann LeCun, and Yubei Chen"
+  authors: "Zeyu Yun, Juexiao Zhang, Yann LeCun, and Yubei Chen"
   abstract: "We developed an unsupervised learning model for generic high dimensional data. The model demonstrated exceptional
 performance across diverse data modalities from neural recording to gene expression."
-  venue:  ICLR 2024 (under review)
+  venue:  ICLR 2025
   image: "/assets/images/research/urlost.png"
   arxiv_link: "https://arxiv.org/abs/2310.04496"
   published: true
